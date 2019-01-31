@@ -1,0 +1,29 @@
+{
+  "name": "sharing-session",
+  "version": "1.0.0",
+  "description": "My astounding Nuxt.js project",
+  "author": "hanjeahwan",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.3.4",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.2.1",
+    "element-ui": "^2.5.1",
+    "js-cookie": "^2.2.0",
+    "lodash": "^4.17.11",
+    "vue-lodash": "^2.0.0",
+    "vuex-persistedstate": "^2.5.4",
+    "@nuxtjs/style-resources": "^0.1.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0"
+  }
+}

@@ -1,0 +1,219 @@
+.demo-item, .demo-element {
+  line-height: 34px;
+  text-align: center;
+  display: inline-block;
+  margin: 0 .8rem .8rem 0; }
+
+.demo-item {
+  background-color: #f2f2f2; }
+  .demo-item .demo-item-header {
+    color: #0097e6; }
+  .demo-item .demo-item-content {
+    color: #44bd32; }
+  .demo-item .demo-item-footer {
+    color: #e84118; }
+
+.demo-element {
+  background-color: #797979;
+  color: #fff; }
+
+.min-w-5 {
+  min-width: 7.5rem; }
+  .min-w-5:after {
+    content: "-xs"; }
+
+.min-w-4 {
+  min-width: 6rem; }
+  .min-w-4:after {
+    content: "-xs"; }
+
+.min-w-3 {
+  min-width: 4.5rem; }
+  .min-w-3:after {
+    content: "-xs"; }
+
+.min-w-2 {
+  min-width: 3rem; }
+  .min-w-2:after {
+    content: "-xs"; }
+
+.min-w-1 {
+  min-width: 1.5rem; }
+  .min-w-1:after {
+    content: "-xs"; }
+
+@media (min-width: 576px) {
+  .min-w-sm-5 {
+    min-width: 7.5rem; }
+    .min-w-sm-5:after {
+      content: "-sm"; }
+
+  .min-w-sm-4 {
+    min-width: 6rem; }
+    .min-w-sm-4:after {
+      content: "-sm"; }
+
+  .min-w-sm-3 {
+    min-width: 4.5rem; }
+    .min-w-sm-3:after {
+      content: "-sm"; }
+
+  .min-w-sm-2 {
+    min-width: 3rem; }
+    .min-w-sm-2:after {
+      content: "-sm"; }
+
+  .min-w-sm-1 {
+    min-width: 1.5rem; }
+    .min-w-sm-1:after {
+      content: "-sm"; } }
+@media (min-width: 768px) {
+  .min-w-md-5 {
+    min-width: 7.5rem; }
+    .min-w-md-5:after {
+      content: "-md"; }
+
+  .min-w-md-4 {
+    min-width: 6rem; }
+    .min-w-md-4:after {
+      content: "-md"; }
+
+  .min-w-md-3 {
+    min-width: 4.5rem; }
+    .min-w-md-3:after {
+      content: "-md"; }
+
+  .min-w-md-2 {
+    min-width: 3rem; }
+    .min-w-md-2:after {
+      content: "-md"; }
+
+  .min-w-md-1 {
+    min-width: 1.5rem; }
+    .min-w-md-1:after {
+      content: "-md"; } }
+@media (min-width: 1024px) {
+  .min-w-lg-5 {
+    min-width: 7.5rem; }
+    .min-w-lg-5:after {
+      content: "-lg"; }
+
+  .min-w-lg-4 {
+    min-width: 6rem; }
+    .min-w-lg-4:after {
+      content: "-lg"; }
+
+  .min-w-lg-3 {
+    min-width: 4.5rem; }
+    .min-w-lg-3:after {
+      content: "-lg"; }
+
+  .min-w-lg-2 {
+    min-width: 3rem; }
+    .min-w-lg-2:after {
+      content: "-lg"; }
+
+  .min-w-lg-1 {
+    min-width: 1.5rem; }
+    .min-w-lg-1:after {
+      content: "-lg"; } }
+@media (min-width: 1280px) {
+  .min-w-xl-5 {
+    min-width: 7.5rem; }
+    .min-w-xl-5:after {
+      content: "-xl"; }
+
+  .min-w-xl-4 {
+    min-width: 6rem; }
+    .min-w-xl-4:after {
+      content: "-xl"; }
+
+  .min-w-xl-3 {
+    min-width: 4.5rem; }
+    .min-w-xl-3:after {
+      content: "-xl"; }
+
+  .min-w-xl-2 {
+    min-width: 3rem; }
+    .min-w-xl-2:after {
+      content: "-xl"; }
+
+  .min-w-xl-1 {
+    min-width: 1.5rem; }
+    .min-w-xl-1:after {
+      content: "-xl"; } }
+@media (min-width: 1440px) {
+  .min-w-xxl-5 {
+    min-width: 7.5rem; }
+    .min-w-xxl-5:after {
+      content: "-xxl"; }
+
+  .min-w-xxl-4 {
+    min-width: 6rem; }
+    .min-w-xxl-4:after {
+      content: "-xxl"; }
+
+  .min-w-xxl-3 {
+    min-width: 4.5rem; }
+    .min-w-xxl-3:after {
+      content: "-xxl"; }
+
+  .min-w-xxl-2 {
+    min-width: 3rem; }
+    .min-w-xxl-2:after {
+      content: "-xxl"; }
+
+  .min-w-xxl-1 {
+    min-width: 1.5rem; }
+    .min-w-xxl-1:after {
+      content: "-xxl"; } }
+@media (min-width: 1600px) {
+  .min-w-xxxl-5 {
+    min-width: 7.5rem; }
+    .min-w-xxxl-5:after {
+      content: "-xxxl"; }
+
+  .min-w-xxxl-4 {
+    min-width: 6rem; }
+    .min-w-xxxl-4:after {
+      content: "-xxxl"; }
+
+  .min-w-xxxl-3 {
+    min-width: 4.5rem; }
+    .min-w-xxxl-3:after {
+      content: "-xxxl"; }
+
+  .min-w-xxxl-2 {
+    min-width: 3rem; }
+    .min-w-xxxl-2:after {
+      content: "-xxxl"; }
+
+  .min-w-xxxl-1 {
+    min-width: 1.5rem; }
+    .min-w-xxxl-1:after {
+      content: "-xxxl"; } }
+@media (min-width: 1920px) {
+  .min-w-ul-5 {
+    min-width: 7.5rem; }
+    .min-w-ul-5:after {
+      content: "-ul"; }
+
+  .min-w-ul-4 {
+    min-width: 6rem; }
+    .min-w-ul-4:after {
+      content: "-ul"; }
+
+  .min-w-ul-3 {
+    min-width: 4.5rem; }
+    .min-w-ul-3:after {
+      content: "-ul"; }
+
+  .min-w-ul-2 {
+    min-width: 3rem; }
+    .min-w-ul-2:after {
+      content: "-ul"; }
+
+  .min-w-ul-1 {
+    min-width: 1.5rem; }
+    .min-w-ul-1:after {
+      content: "-ul"; } }

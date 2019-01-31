@@ -1,0 +1,16 @@
+.badge {
+  font-size: 0.65rem;
+  padding: 2px 4px;
+  border-radius: 3px;
+
+  &.badge-medium {
+      font-size: map-get($tl-font-sizes, base);
+  }
+
+
+  &.badge-rounded {
+    padding-right: .45rem;
+    padding-left: .45rem;
+    border-radius: 8rem;
+  }
+}

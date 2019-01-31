@@ -1,0 +1,52 @@
+// Compile SCSS to CSS run command below
+// For display log like JS console use @debug
+// Note: need to use relative path import all module
+// Because SASS CLI can't regonize webpack alias path
+// command: sass --watch optimize.scss:optimize.css --no-cache --sourcemap=none
+@import "../../assets/theme/resources";
+
+%demo-item-prop {
+  line-height: 34px;
+  text-align: center;
+  display: inline-block;
+  margin: 0 .8rem .8rem 0;
+}
+
+.demo-item {
+   @extend %demo-item-prop;
+   background-color: $tl-light;
+
+   #{&}-header {
+      color: $tl-blue;
+   }
+   #{&}-content {
+      color: $tl-green;
+   }
+   #{&}-footer {
+      color: $tl-red;
+   }
+}
+
+.demo-element {
+   @extend %demo-item-prop;
+   background-color: $tl-secondary;
+   color: $tl-white;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        // @debug breakpoint $breakpoint;
+        // @debug infix $infix;
+        
+        @for $size from 5 through 1 {
+          .min-w#{$infix}-#{$size} {
+              min-width: $size * 1.5rem;
+              &:after{
+                content: '-#{$breakpoint}';
+              }
+          }
+        }
+    }
+}

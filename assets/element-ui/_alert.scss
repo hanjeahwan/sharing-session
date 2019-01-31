@@ -1,0 +1,44 @@
+.el-alert--warning {
+    background-color: lighten($tl-yellow, 38%);
+    color: $tl-yellow;
+    border: 1px solid lighten($tl-yellow, 28%);
+
+    .el-alert__description {
+        color: $tl-yellow;
+    }
+}
+
+.el-alert--success {
+    background-color: lighten($tl-green, 38%);
+    color: $tl-green;
+    border: 1px solid lighten($tl-green, 28%);
+
+    .el-alert__description {
+        color: $tl-green;
+    }
+}
+
+.el-alert--info {
+    background-color: lighten($tl-gray, 38%);
+    color: $tl-gray;
+    border: 1px solid lighten($tl-gray, 28%);
+
+    .el-alert__description {
+        color: $tl-gray;
+    }
+}
+
+.el-alert--error {
+    background-color: lighten($tl-red, 38%);
+    color: $tl-red;
+    border: 1px solid lighten($tl-red, 28%);
+
+    .el-alert__description {
+        color: $tl-red;
+    }
+}
+
+.el-alert__content {
+    display: table-cell;
+    padding: 0 16px;
+}

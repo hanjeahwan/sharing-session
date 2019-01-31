@@ -1,0 +1,54 @@
+// Cursor
+@each $cursor in $tl-cursors {
+  .cursor-#{$cursor} { cursor: $cursor; }
+}
+
+// Line height
+@each  $prop, $value  in $tl-line-height {
+  .line-height-#{$prop} { line-height: $value; }
+}
+
+// Fonts
+@each  $prop, $value  in $tl-font-sizes {
+  .font-size-#{$prop} { font-size: $value; }
+}
+
+
+// Fonts
+@each  $prop, $value  in $tl-theme-shadow {
+  .shadow-#{$prop} { box-shadow: $value; }
+}
+
+// Overflow
+.overflow-auto {
+    overflow: auto;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
+
+// z-index
+.z-index-1000 {
+  z-index: 1000;
+}
+
+.z-index-999 {
+  z-index: 999;
+}

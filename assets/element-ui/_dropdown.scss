@@ -1,0 +1,17 @@
+.el-dropdown-menu {
+    .el-dropdown-menu__item {
+        font-size: map-get($tl-font-sizes, base);
+        color: $tl-text-base;
+        height: 34px;
+        line-height: 34px;
+        
+        &:focus,
+        &:not(.is-disabled):hover {
+            color: $tl-text-base;
+        }
+    }
+}
+
+.el-popper[x-placement^=bottom] {
+    margin-top: 8px;
+}

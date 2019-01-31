@@ -1,0 +1,184 @@
+%payroll-btn-style {
+    background-color: $tl-white;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    line-height: 1.25;
+    cursor: pointer;
+}
+
+%swiper-navigation-style {
+    margin-top: 0;
+    height: auto;
+    width: auto;
+    transform: translate(50%, -50%);
+}
+
+.payroll-search-btn {
+    @extend %payroll-btn-style;
+
+    &:hover {
+        box-shadow: map-get($tl-theme-shadow, blue);
+    }
+}
+
+.payroll-list-group {
+    max-height: 501.5px;
+    overflow-y: auto;
+
+    .media {
+        cursor: pointer;
+        border-bottom: 1px solid $tl-border-color;
+
+        &:hover {
+            background-color: $tl-listing-hover-bg;
+        }
+
+        &.active {
+            background-color: $tl-listing-active-bg;
+        }
+    }
+}
+
+.payroll-comment-list {
+    max-height: 501.5px;
+    overflow-y: auto;
+}
+
+.payroll-pay-step /deep/ {
+    .el-step.is-horizontal .el-step__line {
+        top: 50%;
+    }
+
+    .el-step__icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .el-step__head {
+        margin-left: 22px;
+    }
+
+    .el-step__main {
+        text-align: center;
+        width: 100%;
+        margin-left: -6px;
+
+        @include media-breakpoint-up(md) {
+            width: 150px;
+            margin-left: -24px;
+        }
+    }
+
+    i {
+        font-size: 1.5rem;
+    }
+}
+
+.payroll-step-wrapper {
+    @include media-breakpoint-up(md) {
+        [class*="col-"] {
+            &:nth-child(even) {
+                margin-left: auto;
+            }
+        }
+    }
+
+
+    .payroll-step-items {
+        position: relative;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+        background-color: $tl-white;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $tl-listing-active-bg;
+        }
+
+        .payroll-step-desc {
+            .media-body {
+                padding-right: 46px;
+            }
+        }
+
+        .payroll-step-status {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            top: 50%;
+            right: 0;
+            transform: translate(20%, -50%);
+
+            &.success {
+                box-shadow: map-get($tl-theme-shadow, green);
+                background-color: $tl-green;
+            }
+
+            &.pending {
+                box-shadow: map-get($tl-theme-shadow, yellow);
+                background-color: $tl-yellow;
+            }
+        }
+    }
+}
+
+.payroll-calendar-swiper /deep/ {
+    position: relative;
+    margin: 0 1.25rem;
+    max-width: 100%;
+
+    .payroll-calendar-date {}
+
+    .payroll-calendar-status {
+        padding: .25rem;
+        background-color: $tl-table-header-light-gray;
+
+        &.completed {
+            background-color: $tl-green;
+        }
+
+        &.pending {
+            background-color: $tl-yellow;
+        }
+    }
+
+    .swiper-slide {
+        margin-bottom: 4px;
+        cursor: pointer;
+        width: 101.286px;
+
+        &:last-child {
+            margin-right: 0 !important;
+        }
+
+        &.active-slide {
+            margin-bottom: 0;
+
+            .payroll-calendar-status {
+                padding-bottom: 8px;
+                background-color: $tl-blue-darken;
+            }
+
+            .payroll-calendar-date {
+                background-color: #18bfee;
+                color: $tl-white;
+            }
+        }
+    }
+
+    .swiper-button-prev {
+        @extend %swiper-navigation-style;
+
+        left: -34px;
+    }
+
+    .swiper-button-next {
+        @extend %swiper-navigation-style;
+
+        right: -2px;
+    }
+}

@@ -1,0 +1,82 @@
+$placements: right, left, top, bottom;
+
+// Have similarity
+// Multiple plcaements
+.el-popover-demo {
+    background: $tl-blue;
+    color: $tl-white;
+    border: 1px solid $tl-blue;
+
+    @each $placement in $placements {
+        &.el-popper[x-placement^=#{$placement}] {
+            .popper__arrow {
+                border-#{$placement}-color: $tl-blue;
+
+                &:after {
+                    border-#{$placement}-color: $tl-blue;
+                }
+            }
+        }
+    }
+}
+
+// With multiple theme color
+// @each $color, $value in $theme-colors {
+//     .el-popover-demo-#{$color} {
+//         background: $value;
+//         color: $tl-white;
+//         border: 1px solid $value;
+
+//         @each $placement in $placements {
+//             &.el-popper[x-placement^=#{$placement}] {
+//                 .popper__arrow {
+//                     border-#{$placement}-color: $value;
+
+//                     &:after {
+//                         border-#{$placement}-color: $value;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// More flexible optimize
+// Move to mixins file, if mixins go larger make it as modular
+// https://medium.com/@js_tut/the-complete-guide-to-scss-sass-49ac053fcde5
+@mixin popover-style($name, $color, $font-color: $tl-white) {
+    background: $color;
+    color: $font-color;
+    border: 1px solid $color;
+
+    @content;
+}
+
+@mixin popover-arrow-style($placement, $color) {
+    &.el-popper[x-placement^=#{$placement}] {
+        .popper__arrow {
+            border-#{$placement}-color: $color;
+
+            &:after {
+                border-#{$placement}-color: $color;
+            }
+        }
+    }
+}
+
+@each $name, $color in $theme-colors {
+    .el-popover-demo-#{$name} {
+        @include popover-style($name, $color) {
+            box-shadow: 0 .5rem 1rem transparentize($color, 0.5);
+        };
+
+        @each $placement in $placements {
+            @include popover-arrow-style($placement, $color);
+        }
+    }
+}
+
+.el-popover-demo-black {
+    @include popover-style(black, #303133, red)
+    @include popover-arrow-style(right, #303133);
+}

@@ -1,0 +1,57 @@
+.el-step__head {
+    &.is-process {
+        color: $tl-blue;
+        border-color: $tl-blue;
+        transition: transform .3s ease;
+
+        .el-step__icon {
+            transform: scale(1.2);
+        }
+    }
+
+    &.is-finish {
+        color: $tl-white;
+        border-color: $tl-blue;
+
+        .el-step__icon {
+            background-color: $tl-blue;
+        }
+
+        .el-step__line {
+            background-color: $tl-blue;
+        }
+    }
+}
+
+.el-step__title {
+    line-height: 2;
+
+    &.is-wait {
+        // color: $tl-text-muted;
+   
+    }
+
+    &.is-finish {
+        color: $tl-blue;
+    }
+
+    &.is-process {
+        font-weight: normal;
+        color: $tl-blue;
+    }
+}
+
+.el-step__description {
+    padding-right: 0;
+    font-size: map-get($tl-font-sizes, base);
+    line-height: 1.25;
+
+    // color: $tl-text-muted;
+    &.is-process {
+        color: $tl-blue;
+    }
+
+    &.is-finish {
+        color: $tl-blue;
+    }
+}

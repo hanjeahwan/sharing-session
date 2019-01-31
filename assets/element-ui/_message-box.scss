@@ -1,0 +1,14 @@
+.el-message-box__title {
+    font-size: map-get($tl-font-sizes, lg);
+    color: $tl-text-base;
+    font-weight: bold;
+}
+
+.el-message-box__content {
+    color: $tl-text-base;
+    font-size: map-get($tl-font-sizes, base);
+}
+
+.el-message-box__message p {
+    line-height: map-get($tl-line-height, base);
+}

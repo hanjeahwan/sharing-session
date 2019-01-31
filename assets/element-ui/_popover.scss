@@ -1,0 +1,61 @@
+$placements: right, left, top, bottom;
+
+.el-popover {
+    font-size: map-get($tl-font-sizes, base);
+    line-height: map-get($tl-line-height, base);
+    text-align: left;
+}
+
+.el-popover-hint {
+    background: $tl-blue;
+    color: $tl-white;
+    border: 1px solid $tl-blue;
+    padding: 16px 20px;
+
+    @each $placement in $placements {
+        &.el-popper[x-placement^=#{$placement}] {
+            .popper__arrow {
+                border-#{$placement}-color: $tl-blue;
+
+                &:after {
+                    border-#{$placement}-color: $tl-blue;
+                }
+            }
+        }
+    }
+}
+
+.popover-hint {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    padding: .5rem;
+    cursor: pointer;
+
+    .fa-info-circle {
+        color: $tl-blue;
+
+        &:hover {
+            box-shadow: $tl-box-shadow;
+        }
+    }
+}
+
+.popover-hint-content {
+    position: relative;
+
+    .popover-hint-close {
+        cursor: pointer;
+        position: absolute;
+        top: -10px;
+        right: -14px;
+        line-height: 1;
+        transition: transform .2s linear;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: $tl-box-shadow;
+        }
+    }
+}

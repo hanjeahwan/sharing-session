@@ -1,0 +1,21 @@
+.el-icon-loading {
+    font-size: 1.33333em;
+    line-height: .75em;
+    vertical-align: -.0667em;
+    animation: rotating 2s linear infinite;
+
+    &:before {
+        content: "\E633";
+    }
+}
+
+.el-loading-spinner {
+    transform: translate3d(-50%, -50%, 0);
+    left: 50%;
+    
+    .el-loading-text {
+        color: $tl-blue;
+        margin: .75rem 0;
+        font-size: map-get($tl-font-sizes, base);
+    }
+}

@@ -1,0 +1,13 @@
+.el-pagination {
+    padding: 0;
+
+    &.is-background .el-pager li:not(.disabled) {
+        &.active {
+            background-color: $tl-blue-darken;
+        }
+
+        &:hover {
+            color: $tl-blue-darken;
+        }
+    }
+}

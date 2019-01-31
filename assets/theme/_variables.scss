@@ -1,0 +1,77 @@
+$tl-cursors: default, pointer, not-allowed, move;
+
+// Color system
+$tl-white: #fff;
+$tl-white-accent: #fafafa;
+$tl-blue: #0097e6;
+$tl-blue-darken: #479fd8;
+$tl-green: #44bd32;
+$tl-green-accent: lighten($tl-green, 10%);
+$tl-red: #e84118;
+$tl-red-darken: #cc0000;
+$tl-red-accent: lighten($tl-red, 10%);
+$tl-yellow: #f5b332;
+$tl-yellow-accent: lighten($tl-yellow, 10%);
+$tl-black: #000;
+$tl-purple-darken: #897ee1;
+$tl-purple-accent: #9999ff;
+$tl-cyan-darken: #00acc1;
+$tl-cyan-accent: #33ffcc;
+$tl-peachy: #fff3f6;
+$tl-gray: #909399;
+
+$tl-colors: ("cyan-accent": $tl-cyan-accent, "purple-accent": $tl-purple-accent);
+
+$tl-purple-gradient: linear-gradient(90deg, rgb(170, 80, 224) 0%, rgb(170, 80, 224) 0%, rgb(153, 102, 255) 100%, rgb(153, 102, 255) 100%);
+$tl-blue-gradient: linear-gradient(90deg, rgb(102, 102, 255) 0%, rgb(102, 102, 255) 0%, rgb(102, 153, 255) 100%, rgb(102, 153, 255) 100%);
+
+// Theme system
+$tl-light: #f2f2f2;
+$tl-secondary: #797979;
+$tl-theme-colors: ("cyan-accent": $tl-cyan-accent, "purple-accent": $tl-purple-accent, "yellow-accent": $tl-yellow-accent, "green-accent": $tl-green-accent, "red-accent": $tl-red-accent, "red-darken": $tl-red-darken);
+
+// Grid
+$tl-grid-columns: 24;
+$tl-grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 1024px, xl: 1280px, xxl: 1440px, xxxl: 1600px, ul: 1920px);
+$tl-container-max-widths: (sm: 540px, md: 600px, lg: 840px, xl: 960px, xxl: 1280px, xxxl: 1440px, ul: 1600px);
+
+// Components
+$tl-hover-darken-level: 10%;
+
+$tl-border-radius: 3px;
+$tl-border-color: #e4e7ed;
+
+$tl-main-bg: #f5fafd;
+$tl-aside-bg: #f5f6fa;
+$tl-header-bg: #192a56;
+$tl-header-sub-bg: #273c75;
+$tl-listing-hover-bg: #f5f6fa;
+$tl-listing-active-bg: #ecf5ff;
+$tl-listing-menu-color: #273c75;
+
+$tl-box-shadow: 0 0.125rem 0.25rem rgba($tl-black, 0.075);
+$tl-theme-shadow: (green: (0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4)), yellow: (0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4)), red: (0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4)));
+
+// Select
+$tl-select-active-bg: lighten($tl-blue, 50%);
+
+// Table
+$tl-table-header-dark-gray: #aeaeae;
+$tl-table-header-darken-gray: #718093;
+$tl-table-header-light-gray: #c9c9c9;
+$tl-table-header-lighter-gray: #d7d7d7;
+$tl-table-header-light-blue: #84b7e9;
+$tl-table-cell-alice-blue: #ECF5FF;
+
+// Font, line-height, and color for body text, headings, and more.
+$tl-font-family-base: "Quicksand", sans-serif;
+$tl-font-sizes: (base: 0.8125rem, sm: 0.75rem, md: 0.875rem, lg: 1rem);
+$tl-font-weight-base: 400;
+$tl-line-height-base: 1.5;
+$tl-line-height: (base: 1.5, xs: 1, sm: 1.25, md: 1.75, lg: 2, xl: 2.65);
+
+$tl-text-base: #666666;
+$tl-text-secondary: #718093;
+$tl-text-muted: #AEAEAE;
+$tl-text-dark: #333333;
+$tl-text-placeholder: #c0c4cc;

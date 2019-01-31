@@ -1,0 +1,13 @@
+.el-tree {
+    color: $tl-text-base;
+
+    a {
+        color: $tl-text-base;
+
+        &:hover,
+        &:focus {
+            color: $tl-blue-darken;
+            text-decoration: none;
+        }
+    }
+}

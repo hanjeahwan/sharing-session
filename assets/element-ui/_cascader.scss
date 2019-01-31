@@ -1,0 +1,17 @@
+.el-cascader {
+    display: block;
+}
+
+.el-cascader-menu__item {
+    font-size: map-get($tl-font-sizes, base);
+    color: $tl-text-base;
+
+    &.is-active {
+        color: $tl-blue;
+    }
+}
+
+.el-cascader__label {
+    color: $tl-blue;
+    font-size: map-get($tl-font-sizes, base);
+}

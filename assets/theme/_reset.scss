@@ -1,0 +1,44 @@
+html,
+body {
+    font-family: $tl-font-family-base;
+    margin: 0;
+    // overflow: hidden;
+    color: $tl-text-base;
+}
+
+.page-enter,
+.page-leave-active {
+    opacity: 0;
+}
+
+.page-enter-active,
+.page-leave-active {
+    transition: opacity 0.4s;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+hr {
+    border-top: 1px solid $tl-border-color;
+}
+
+label {
+    margin-bottom: .25rem;
+}
+
+.__nuxt-error-page {
+    position: relative;
+    height: 100vh;
+    background-color: $tl-main-bg;
+    padding-top: 50px;
+}
+
+a {
+    color: $tl-text-base;
+
+    &:hover {
+        color: $tl-blue-darken;
+    }
+}

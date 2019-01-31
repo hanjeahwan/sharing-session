@@ -1,0 +1,10 @@
+.el-notification__content {
+  color: $tl-text-base;
+  font-size: map-get($tl-font-sizes, base);
+  text-align: left;
+}
+
+.el-notification__title {
+  font-size: 1.01563rem;
+  color: $tl-text-base;
+}

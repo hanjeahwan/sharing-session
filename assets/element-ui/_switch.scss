@@ -1,0 +1,8 @@
+.el-switch {
+  &.is-checked {
+    .el-switch__core {
+      border-color: $tl-blue;
+      background-color: $tl-blue;
+    }
+  }
+}

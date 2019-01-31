@@ -1,0 +1,45 @@
+.el-checkbox {
+  color: $tl-text-base;
+  margin-bottom: 0;
+}
+
+.el-checkbox__inner {
+  border-width: 1px;
+  background-color: $tl-white;
+  width: 18px;
+  height: 18px;
+
+  &:after {
+    border-width: 1px;
+    border-color: $tl-blue;
+    width: 4px;
+    height: 10px;
+    left: 6px;
+  }
+
+
+}
+.el-checkbox-button__inner {
+  &:hover {
+      color: $tl-blue;
+  }
+}
+
+.el-checkbox__input {
+
+  &.is-checked .el-checkbox__inner,
+  &.is-indeterminate .el-checkbox__inner {
+    background-color: $tl-white;
+    border-color: $tl-blue;
+  }
+
+  &.is-checked+.el-checkbox__label {
+    color: $tl-blue;
+  }
+}
+
+
+
+.el-checkbox__label {
+  font-size: map-get($tl-font-sizes, base);
+}

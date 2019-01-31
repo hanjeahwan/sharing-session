@@ -1,0 +1,55 @@
+@mixin button-style() {
+    @if $tl-enable-shadow {
+        box-shadow: 0 0.5rem 1rem transparentize($tl-blue, 0.5);
+    }
+
+    color: $tl-white;
+    background-color: $tl-blue;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid $tl-blue;
+    border-radius: 4px;
+    cursor: pointer;
+
+    & ~ [class^=demo-button] {
+        margin-left: .5rem;
+    }
+
+    @content;
+}
+
+@mixin button-size($size: "") {
+    @if $size == "small" {
+        font-size: 11px;
+        height: 24px;
+        padding: 0 7px;
+    }
+    @else if $size == "large" {
+        font-size: 16px;
+        height: 40px;
+        padding: 0 18px;
+    }
+    @else {
+        height: 32px;
+        padding: 0 15px;
+    }
+
+    @content;
+}
+
+$tl-enable-shadow: true;
+
+.demo-button {
+    @include button-style();
+    @include button-size;
+}
+
+.demo-button-small {
+    @include button-style();
+    @include button-size(small);
+}
+
+.demo-button-large {
+    @include button-style();
+    @include button-size(large);
+}

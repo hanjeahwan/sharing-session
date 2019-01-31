@@ -1,0 +1,129 @@
+// Icons
+.rectangle-gradient-box {
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  border: 3px solid transparent;
+  border-image: linear-gradient(90deg, #936fdb, #67c8ee);
+  border-image-slice: 1;
+}
+
+// Divider
+.divider,
+.divider-vert {
+  display: block;
+  position: relative;
+}
+
+.divider-vert[data-content]::after,
+.divider[data-content]::after {
+  background: $tl-white;
+  color: $tl-text-muted;
+  content: attr(data-content);
+  display: inline-block;
+  font-size: .7rem;
+  padding: 0 .4rem;
+  transform: translateY(-13px);
+}
+
+.divider {
+  border-top: 1px solid $tl-border-color;
+  height: 1px;
+  margin: 0.4rem 0;
+}
+
+.divider[data-content] {
+  margin: 0.8rem 0;
+}
+
+.divider-vert {
+  display: block;
+}
+
+.divider-vert::before {
+  border-left: 1px solid $tl-border-color;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.divider-vert[data-content]::after {
+  left: 50%;
+  padding: .2rem 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Avatars
+.avatar-list-group {
+  .avatar {
+    margin: .25rem;
+  }
+}
+
+// Status Dot
+
+@keyframes statusProcessing {
+    0% {
+        transform: scale(.8);
+        opacity: .5
+    }
+
+    to {
+        transform: scale(2.4);
+        opacity: 0
+    }
+}
+
+%dot-after {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        content: "";
+        animation: statusProcessing 1.2s ease-in-out infinite;
+    }
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+
+    &.default {
+        background-color: #d9d9d9;
+    }
+
+    &.success {
+        @extend %dot-after;
+        background-color: #1890ff;
+
+        &:after {
+            border: 1px solid #1890ff;
+        }
+    }
+
+    &.terminate {
+
+        @extend %dot-after;
+        background-color: #f5222d;
+
+        &:after {
+            border: 1px solid #f5222d;
+        }
+    }
+}

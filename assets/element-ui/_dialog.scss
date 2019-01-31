@@ -1,0 +1,41 @@
+%default-dialog-style {
+    padding: 1.5rem;
+    color: $tl-text-base;
+}
+
+.el-dialog {
+    width: 90%;
+
+    @include media-breakpoint-up(md) {
+        width: 80%;
+    }
+
+
+    @include media-breakpoint-up(lg) {
+        width: 650px;
+    }
+
+}
+
+.el-dialog__title {
+    font-size: map-get($tl-font-sizes, lg);
+    font-weight: bold;
+    color: $tl-text-dark;
+}
+
+.el-dialog__header {
+    @extend %default-dialog-style;
+}
+
+.el-dialog__body {
+    padding: 0 1.5rem;
+    font-size: map-get($tl-font-sizes, base);
+}
+
+.el-dialog__footer {
+    @extend %default-dialog-style;
+}
+
+.el-dialog__headerbtn {
+    top: 18px;
+}

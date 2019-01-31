@@ -1,0 +1,110 @@
+.leave-calendar {
+    .active-slide {
+        background-color: #479fd8;
+        color: white;
+    }
+
+    .swiper-slide {
+        cursor: pointer;
+        width: 101.3px;
+      }
+      
+    .history-btn, .future-btn {
+        height: 35px;
+        width: 35px;
+        z-index: 2;
+    }
+
+    .calendar-month {
+        .el-table--border td, .el-table--border th {
+            border-color: #ced2d8;
+        }
+
+        .el-table__header-wrapper table {
+            border-top: 3px solid #479fd8;
+        }
+
+        .el-table--border {
+            border-top: 0px;
+        }
+
+        .el-table td {
+            padding: 0;
+            height: 70px;
+        }
+
+        .weekend {
+            background: #dee2e6;
+        }
+
+        .holiday-1, .holiday-2, .holiday-3, .holiday-4{
+            background: #d3f6fb;
+        }
+
+        .holiday-5{
+            background: #fdedad;
+        }
+
+        .t-3 {
+            top: 3px;
+        }
+
+        .abbreviation {
+            padding-top: 0.25em;
+
+            .text-muted {
+                padding: 0.25em;
+            }
+
+            .label {
+                min-width: 10px;
+                min-height: 10px;
+                padding: 0 0.35em;
+                margin-right: 0.25em;
+            }
+
+            .w-45 {
+                width: 45px;
+            }
+        }
+
+        .calendar-day {            
+            .highlight {
+                border: 1px solid transparent;
+                height: 28px;
+                border-radius: 6px;
+                position: absolute;
+                z-index: 2;
+                top: 20px;
+            }
+            
+            .continue {
+                border-radius: 6px 0 0 6px;
+            }
+            
+            .status-dot {
+                height: 6px;
+                width: 6px; 
+                border-radius: 3px;
+                margin: 0.5em;
+            }
+            
+            .status {
+                color: white;
+                font-size: 12px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                margin: 0.5em;
+            }
+        }
+    }
+}
+
+.status-dot-bg {
+    height: 8px;
+    width: 8px; 
+    border-radius: 4px;
+    margin: 0.5em;
+    margin-left: 0px;
+}

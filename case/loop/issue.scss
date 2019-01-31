@@ -1,0 +1,45 @@
+.el-popover-demo {
+    background: $tl-blue;
+    color: $tl-white;
+    border: 1px solid $tl-blue;
+
+    &.el-popper[x-placement^=right] {
+        .popper__arrow {
+            border-right-color: $tl-blue;
+
+            &:after {
+                border-right-color: $tl-blue;
+            }
+        }
+    }
+
+    &.el-popper[x-placement^=left] {
+        .popper__arrow {
+            border-left-color: $tl-blue;
+
+            &:after {
+                border-left-color: $tl-blue;
+            }
+        }
+    }
+
+    &.el-popper[x-placement^=top] {
+        .popper__arrow {
+            border-top-color: $tl-blue;
+
+            &:after {
+                border-top-color: $tl-blue;
+            }
+        }
+    }
+
+    &.el-popper[x-placement^=bottom] {
+        .popper__arrow {
+            border-bottom-color: $tl-blue;
+
+            &:after {
+                border-bottom-color: $tl-blue;
+            }
+        }
+    }
+}

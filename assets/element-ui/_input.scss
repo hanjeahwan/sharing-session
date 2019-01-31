@@ -1,0 +1,21 @@
+%default-input-stye {
+    color: $tl-blue;
+    border-radius: $tl-border-radius;
+    font-size: map-get($tl-font-sizes, base);
+
+    &::placeholder {
+        font-size: map-get($tl-font-sizes, base);
+    }
+}
+
+.el-input__inner {
+    @extend %default-input-stye;
+}
+
+.el-textarea__inner {
+    @extend %default-input-stye;
+}
+
+.el-input-number {
+    width: 100%;
+}
